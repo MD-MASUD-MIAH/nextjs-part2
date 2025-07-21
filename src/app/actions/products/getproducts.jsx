@@ -1,11 +1,11 @@
 "use server"
-import dbConnect from "@/lib/dbConnect";
+import dbConnect, { collectionName } from "@/lib/dbConnect";
 export const getProducts = async ()=>{
 
 
     try{
 
-        const data =  await dbConnect("blogs").find({}).toArray()
+        const data =  await dbConnect(collectionName.PRACTICE_DATA).find({}).toArray()
 
         return data
     }catch(err){

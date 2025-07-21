@@ -20,6 +20,9 @@ function Navbar(props) {
           <li>
             <Link href={"/meals"}>Meals</Link>
           </li>{" "}
+          <li>
+            <Link href={"/register"}>Register</Link>
+          </li>{" "}
         </ul>
       </nav>
     </div>
